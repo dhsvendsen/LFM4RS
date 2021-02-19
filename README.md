@@ -1,8 +1,3 @@
-# Latent Force Models for Soil Moisture Modelling
-
-- ***LFM.py*** contains the latent force multi-ouput GP class, with the kernel corresponding to a convolution between a GP with rbf kernel and a Greens function of a 1st order ODE as described in [Álvarez et al.](http://proceedings.mlr.press/v5/alvarez09a/alvarez09a.pdf)
-- ***LFM_SoilMoisture.ipynb*** contains the experiments of modelling soil moisture data with LFMs
-
 <div style="display: flex;">
 <img src="images/paper.png" alt="drawing" width="100"/>
 </div>
@@ -28,8 +23,7 @@ In the second case study, we show how the model can fill in gaps of leaf area in
 <img style="border-bottom:5px solid white; border-top:25px solid white" src="images/code2.png" alt="drawing" width="90"/>
 </div>
 
-
-We provide the code for the [implementation](https://github.com/dhsvendsen/LFM4RS/blob/master/LFM.py) of the Latent Force Model with a 1st order ODE kernel as well as a [notebook](https://github.com/dhsvendsen/LFM4RS/blob/master/LFM_SoilMoisture.ipynb) showing the modelling of the timeseries of soil moisture products SMOS, ASCAT and AMSR2. 
+In `LFM.py` we provide the implementation of the Latent Force Model with a 1st order ODE kernel. In the notebook `LFM_SoilMoisture.ipynb` we show the modelling of the timeseries of soil moisture products SMOS, ASCAT and AMSR2. 
 
 <div style="display: flex;">
 <img style="border-bottom:8px solid white; border-top:30px solid white" src="images/supplmat.png" alt="drawing" width="310"/>
@@ -70,7 +64,3 @@ The conclusion is of course that the function is very hard to model, due to its 
 
 
 The mechanistic approach described above does not work well outside synthetic experiments, however, because it is too faithful to the analytical solution of the ODE and, as described in [our paper (link to come)](https://arxiv.org), when the 1st order ODE is only an approximation to the system, this apporach does poorly. The LFM, however, can model noise and is more flexible, and leads to inference of physically meaning parameters and latent forces. In this way the LFM combines the best of both worlds.
-
-$$
-.
-$$
