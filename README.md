@@ -28,7 +28,6 @@ In the second case study, we show how the model can fill in gaps of leaf area in
 <img style="border-bottom:5px solid white; border-top:25px solid white" src="images/code2.png" alt="drawing" width="90"/>
 </div>
 
-![Alt text](images/code2.png?raw=true "Title")
 
 We provide the code for the [implementation](https://github.com/dhsvendsen/LFM4RS/blob/master/LFM.py) of the Latent Force Model with a 1st order ODE kernel as well as a [notebook](https://github.com/dhsvendsen/LFM4RS/blob/master/LFM_SoilMoisture.ipynb) showing the modelling of the timeseries of soil moisture products SMOS, ASCAT and AMSR2. 
 
